@@ -3,7 +3,7 @@ export function TodoCard(props) {
     
     return (
         <div className="card todo-item">
-            <p>{todo.input}</p>
+            <p style={{ textDecoration: todo.complete ? 'line-through' : 'none'}}>{todo.input}</p>
             <div className="todo-button">
                 <button onClick={() => {
                     handleCompleteTodo(todoIndex);
